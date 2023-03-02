@@ -14,9 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Host V12 - nextjs - Port:4012</h1>
-      <React.Suspense fallback="Loading remote 3012">
+      {/* <React.Suspense fallback="Loading remote 3012"> */}
         <Cart/>
-      </React.Suspense>
+      {/* </React.Suspense> */}
     </>
   )
 }

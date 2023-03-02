@@ -5,7 +5,8 @@ const nextConfig = {
   reactStrictMode: true,
   webpack(config, options) {
     // const { webpack } = options;
-    // Object.assign(config.experiments, { topLevelAwait: true });
+    console.log(options.webpack.version);
+    Object.assign(config.experiments, { topLevelAwait: true });
     // if (!options.isServer) {
       //config.cache=false
       config.plugins.push(

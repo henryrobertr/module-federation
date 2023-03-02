@@ -2,7 +2,9 @@ import React from 'react';
 import Head from 'next/head'
 import dynamic from 'next/dynamic';
 
-const Ads = dynamic(async () => import('nextjsLatest/ads'), {ssr: false});
+const Ads = dynamic(async () => import('nextjsLatest/ads'));
+
+// const Ads = React.lazy(() => import('nextjsLatest/ads'));
 
 export default function Home() {
   return (
